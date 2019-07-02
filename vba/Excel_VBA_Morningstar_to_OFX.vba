@@ -1,3 +1,4 @@
+' Source/Documentation: https://github.com/MarioDelgadoSr/Excel_VBA_Morningstar_to_OFX
 
 Private Type GUID
     Data1 As Long

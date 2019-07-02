@@ -1,1 +1,153 @@
-# Excel_VBA_Morningstar_to_OFX
+<!-- Markdown reference: https://guides.github.com/features/mastering-markdown/ -->
+
+# *Excel_VBA_Morningstar_to_OFX*
+
+* This VBA program will generate an OFX file from [Morningstar](https://www.morningstar.com/)'s Portfolio export and into an OFX formatted file.  
+* The OFX file can then be imported into [Microsoft Money Plus Sunset](https://www.microsoft.com/en-us/download/details.aspx?id=20738) to update the portfolio's stock and mutual fund prices.
+
+With this VBA program installed in Excel, you have a reliable, free source of stock and mutual fund data to keep your Microsoft Money portfolio upto date.
+
+## Background: [Obtain stock and fund quotes after July 2013](http://moneymvps.org/faq/article/651.aspx)
+
+## Instructions
+
+* Add [Excel_VBA_Morningstar_to_OFX.vba](https://github.com/MarioDelgadoSr/Excel_VBA_Morningstar_to_OFX/blob/master/vba/Excel_VBA_Morningstar_to_OFX.vba) to Excel.
+
+	* **Related**:
+	
+		* [How to insert and run VBA code in Excel - tutorial for beginners](https://www.ablebits.com/office-addins-blog/2013/12/06/add-run-vba-macro-excel/)
+		* [Copy your macros to a Personal Macro Workbook](https://support.office.com/en-us/article/Copy-your-macros-to-a-Personal-Macro-Workbook-AA439B90-F836-4381-97F0-6E4C3F5EE566)
+
+* Create a portfolio in Morningstar with 'Ticker', '$ Current Price' and 'Morningstar Rating For Funds' columns.  
+
+	* [Video: Creating a Morningstart Portfolio](http://video.morningstar.com/us/misc/portfoliomanager/portfolio_noexisting.html)
+	* ![Screen Shot of required column in custom portfolio view](https://github.com/MarioDelgadoSr/DataVisual/blob/master/img/demoDesignPatternScreenShot.png)
+
+
+
+
+
+The demo illustrates *DataVisual* features with a use case simulating a U.S. Navy (*Go Navy! Beat Army*) aquaRobot determining an optimal salvage
+retrieval strategy for objects floating and submersed out at sea.  
+
+aquaRobot utilizes information about the salvage items in a data array partnered/join with the 3D visual's spatial attributes to maximize the salvage; keeping track of how
+much fuel it would have left.  
+
+The 3D visual was developed with [Blender](https://www.blender.org/) and exported as a [glTF](https://en.wikipedia.org/wiki/GlTF) file.  
+Three.js's [GLTFLoader](https://threejs.org/docs/index.html#examples/loaders/GLTFLoader) is used in the demonstration to load the 3D visual an then dynamically visualizes it.
+
+
+The visualization animates the salvage strategy and leverages several of *DataVisual*'s features including:
+
+* Maintaing join context when sorting the join object;
+* Referencing joined properties from both the data and visual;
+* Dynamic data coloring/visualization using [D3.js](https://d3js.org/).
+* Rendering only objects that will be salvaged with a data-drive algorithm;  
+	* All objects can be displayed/rendered with a user-driven (aquaRobot's operator) option for *human* validation;
+* Demonstration of [raycasting](https://threejs.org/docs/index.html#api/en/core/Raycaster) to display an object when selected (mouse click) by aquaRobot's operator; leveraging *DataVisual*'s *getJoinByUUID* method.
+
+
+### Prerequisites
+
+If using the Chrome browser with file system access, the *--allow-file-access-from-files* flag **must** be used.  
+See:  [How to set the allow-file-access-from-files flag option in Google Chrome](http://www.chrome-allow-file-access-from-file.com/)
+
+
+### Installing
+
+Download zip of code, unzip to a folder and launch index.html from a web server or from the file system with a [WebGL enabled browser](https://get.webgl.org/).
+
+The demonstration will intially prompt for the type of glTF file to utilize:
+
+![Screen Shot of glTF Selection](https://github.com/MarioDelgadoSr/DataVisual/blob/master/img/gltfSelection.PNG)
+
+* gltf/seaScape.gltf utilizes data as a separate object in the *join*.
+* gltf/seaScapeEmbeddedData.gltf utilizes embedded data within the glTF file; extracting it first before implementing the *join*.
+
+## Documentation
+
+Observable Notebook: [DataVisual (Data + Visual) Design Pattern for WebGL 3D Assets](https://observablehq.com/@mariodelgadosr/datavisual-data-visual-design-pattern-for-webgl-3d-assets)
+
+
+## Design Pattern Usage Illustrated in the Demonstration
+
+### DataVisual with Data in an Object Apart from the Visual 
+
+**Assuming the following:**
+
+* A JavaScript data object in the following format: 
+
+```javascript
+var data = [{name: "object1", value: value1, ...} ,{name: "object2", value2, ...}, ... }];
+```
+
+* A glTF file loaded into the variable *visual* with *name* attibutes for the meshes that match the *name* attributes for the data object;
+
+**Create a DataVisual object with the following syntax:**
+
+```javascript
+var datVisual = new dataVisual();
+datVisual.joinDataToVisual(data, visual);
+```
+
+### DataVisual with Data Embedded in the Visual
+
+Three.js, as well as the glTF specifications, provide for a strategy to extend the visual with data that can be visualized:
+
+* With Three.js it is the [*userData*](https://threejs.org/docs/index.html#api/en/core/Object3D.userData) property.
+* With gltF it is the [*extras*](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#reference-extras) property.
+
+Instantiating a **DataVisual** in the following format creates a *dataVisual* object from a *visual* when the data is embedded in the [*userData*](https://threejs.org/docs/index.html#api/en/core/Object3D.userData)  property.
+
+```javascript
+var datVisual = new dataVisual();
+datVisual.joinDataToVisual(visual);
+```
+
+**The dataVisual has the following methods and properties:**
+
+**Methods:**
+
+Method | Description
+-------| -----------
+.joinDataToVisual(data, visual) | Join *data* to a *visual*'s mesh utilizing each object's *name* property
+.joinDataToVisual(data, visual, dataKey, visualKey) | Join *data* to a *visual* utilizing *data*'s *dataKey* property and *visual*'s *visualKey* property.  *visualKey* can be a direct property of a mesh, or it's *.userData* property.
+.joinDataToVisual(visual) | Creates a *dataVisual* object from a *visual* when the data is embedded within in the [*userData*](https://threejs.org/docs/index.html#api/en/core/Object3D.userData) property for mesh(es).
+.getJoinByUUID(uuid) | Get a joined row by referencing a mesh's *uuid*. This method is very helpful with [raycasting](https://threejs.org/docs/index.html#api/en/core/Raycaster) techniques. 	
+.getJoinByUUID(uuid, "index") | Get a joined row's index by referencing a mesh's *uuid*. This method is very helpful with [raycasting](https://threejs.org/docs/index.html#api/en/core/Raycaster) techniques. 	
+.getJoinByKey(dataKey) | Get a joined row by referencing a dataRow's *dataKey*.
+.getJoinByKey(dataKey, "index") | Get a joined row's index by referencing a dataRow's *dataKey*.
+.setColorVisualObj(visualObj,color) | Set the material.color property for a mesh.  The method utilizes the Three.js [traverse](https://threejs.org/docs/index.html#api/en/core/Object3D.traverse) method to set color for any children the mesh may have as well.
+.setColorByJoinIndex(index,color) | Set the material.color property for a mesh by referencing the index of the join. The method invokes .setColorVisualObj for the given index.
+
+**Properties:** 
+
+Property | Description
+-------- | -----------
+.join | A join object (array).  Each element of the array will be an object referencing a joined (matching) dataRow and visuaObj.
+.join.dataRow | A reference to data row from the original data array that corresponds to the joined (matching) visualObj.
+.join.visualObj | A reference to the Three.js mesh being 'joined' to.
+.data | The original data participating in the 'join'.
+.visual | The original visual participating in the 'join'.
+.dataKey | The data key attribute being used to join to a corresponding mesh in the visual.
+.visualKey |The visual key attribute being used to join to the visual's mesh. Property *visualKey* can be a direct property of a mesh or a property of the mesh's *.userData* member.
+.nonMatchingDataKeys | An array holding any dataKey(s) that did not join/match when the *joinDataToVisual* method was invoked.
+
+
+
+
+
+## Author
+
+* **Mario Delgado**  Github: [MarioDelgadoSr](https://github.com/MarioDelgadoSr)
+* LinkedIn: [Mario Delgado](https://www.linkedin.com/in/mario-delgado-5b6195155/)
+* [My Data Visualizer](http://MyDataVisualizer.com/demo/): A data visualization application using the *DataVisual* design pattern.
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+
+
+
