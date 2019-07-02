@@ -21,7 +21,7 @@ With this VBA program installed in Excel, you have a reliable, free source of st
 		* [How to insert and run VBA code in Excel - tutorial for beginners](https://www.ablebits.com/office-addins-blog/2013/12/06/add-run-vba-macro-excel/)
 		* [Copy your macros to a Personal Macro Workbook](https://support.office.com/en-us/article/Copy-your-macros-to-a-Personal-Macro-Workbook-AA439B90-F836-4381-97F0-6E4C3F5EE566)
 		
-* **Edit the program** (line 53) to specify the location of the OFX file that will be generated. By default, the program will write out to "C:\temp\quotes.ofx".
+* **Edit the program** (line 53) to specify the location of the OFX file that will be generated.  By default, the program will write out to "C:\temp\quotes.ofx".
 
 * Create a portfolio in Morningstar with 'Ticker', '$ Current Price' and 'Morningstar Rating For Funds' columns.  
 
