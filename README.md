@@ -22,7 +22,7 @@ With this VBA program installed in Excel, you have a reliable, free source of st
 
 * Create a portfolio in Morningstar with 'Ticker', '$ Current Price' and 'Morningstar Rating For Funds' columns.  
 
-	* [Video: Creating a Morningstart Portfolio](http://video.morningstar.com/us/misc/portfoliomanager/portfolio_noexisting.html)
+	* [Video: Creating a Morningstar Portfolio](http://video.morningstar.com/us/misc/portfoliomanager/portfolio_noexisting.html)
 	* ![Screen Shot of required column in custom portfolio view](https://github.com/MarioDelgadoSr/Excel_VBA_Morningstar_to_OFX/blob/master/img/portfolio.png)
 
 * Use the Morningstar 'Export' utility to export the custom portfolio view to Excel.
