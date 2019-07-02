@@ -7,7 +7,9 @@
 
 With this VBA program installed in Excel, you have a reliable, free source of stock and mutual fund data to keep your Microsoft Money portfolio upto date.
 
-## Microsoft Money Stock Pricing Importing Background: [Obtain stock and fund quotes after July 2013](http://moneymvps.org/faq/article/651.aspx)
+## Microsoft Money Stock Price Importing Background: 
+
+* [Obtain stock and fund quotes after July 2013](http://moneymvps.org/faq/article/651.aspx)
 
 ## Instructions
 
