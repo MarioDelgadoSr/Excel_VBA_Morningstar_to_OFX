@@ -28,7 +28,7 @@ With this VBA program installed in Excel, you have a reliable, free source of st
 	* [Video: Creating a Morningstar Portfolio](http://video.morningstar.com/us/misc/portfoliomanager/portfolio_noexisting.html)
 	* ![Screen Shot of required column in custom portfolio view](https://github.com/MarioDelgadoSr/Excel_VBA_Morningstar_to_OFX/blob/master/img/portfolio.png)
 
-* Use the Morningstar 'Export' utility to export the custom portfolio view to Excel.
+* Use the Morningstar 'Export' utility (see screen shot above) to export the custom portfolio view to Excel.
 
 * Run the *makeOFX_file* macro in Excel.  It will dynamically read the Excel-based portfolio data created by Moningstar and write out the specified file.
 
