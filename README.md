@@ -17,7 +17,7 @@ The VBA program is
 
 * [Download Price Quotes to Microsoft Money After Microsoft Pulls the Plug](https://thefinancebuff.com/security-quote-script-for-microsoft-money.html)
 * [Obtain stock and fund quotes after July 2013](http://moneymvps.org/faq/article/651.aspx)
-* [Replacing Microsoft Money, Part 5: OFX Scripts] (https://thefinancebuff.com/replacing-microsoft-money-part-5-ofx-scripts.html)
+* [Replacing Microsoft Money, Part 5: OFX Scripts](https://thefinancebuff.com/replacing-microsoft-money-part-5-ofx-scripts.html)
 
 
 ## Instructions
