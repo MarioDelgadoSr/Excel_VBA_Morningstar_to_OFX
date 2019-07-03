@@ -2,16 +2,33 @@
 
 # *Excel_VBA_Morningstar_to_OFX*
 
-* This VBA program will generate an OFX file from [Morningstar](https://www.morningstar.com/)'s Portfolio export and into an [OFX formatted file](http://moneymvps.org/faq/article/8.aspx).  
+* This [VBA](https://en.wikipedia.org/wiki/Visual_Basic_for_Applications) program will generate an OFX file from [Morningstar](https://www.morningstar.com/)'s Portfolio [export utiliity](http://www.morningstar.com/Help/Portfolio.html#Export) into an [OFX formatted file](http://moneymvps.org/faq/article/8.aspx).  
 * The OFX file can then be imported into [Microsoft Money Plus Sunset](https://www.microsoft.com/en-us/download/details.aspx?id=20738) to update the portfolio's stock and mutual fund prices.
 
-With this VBA program installed in Excel, you have a reliable, free source of stock and mutual fund data to keep your Microsoft Money portfolio upto date.
+With this VBA program installed in [Microsoft Excel](https://en.wikipedia.org/wiki/Microsoft_Excel), you have a reliable, [free](https://investing-school.com/review/morningstar-review-free-vs-premium-membership/) source of stock and mutual fund data to keep your Microsoft Money portfolio upto date.
 
-## Microsoft Money Stock Price Importing Background: 
+## Microsoft Money Stock Price Importing Background:
 
+The articles listed here are for background and **not** detailing software install prerequisites.  
+
+The *Excel_VBA_Morningstar_to_OFX.vba* program is an alternative to the Python script detailed in the first article.  
+
+The VBA program is 
+
+* [Download Price Quotes to Microsoft Money After Microsoft Pulls the Plug](https://thefinancebuff.com/security-quote-script-for-microsoft-money.html)
 * [Obtain stock and fund quotes after July 2013](http://moneymvps.org/faq/article/651.aspx)
+* [Replacing Microsoft Money, Part 5: OFX Scripts] (https://thefinancebuff.com/replacing-microsoft-money-part-5-ofx-scripts.html)
+
 
 ## Instructions
+
+* Create a *Dummy* investment account, as detailed in: [Download Price Quotes to Microsoft Money After Microsoft Pulls the Plug](https://thefinancebuff.com/security-quote-script-for-microsoft-money.html). 
+   This will be the Microsoft Money account the security prices are imported to.  **Only the Microsoft Money portfolio stock prices will be updated**.  
+   The number of securities holdings is set to zero by the VBA program as detailed in [this strategy](https://thefinancebuff.com/replacing-microsoft-money-part-5-ofx-scripts.html#comment-2748).
+   
+   **Note**: You don't need to do any of the Python setup in the [article](https://thefinancebuff.com/security-quote-script-for-microsoft-money.html), only the *Dummy* account setup. This VBA program is an alternative to the Python scripts and utilizes
+   Morningstar Portfolio data as the security price source.
+   
 
 * Add [Excel_VBA_Morningstar_to_OFX.vba](https://github.com/MarioDelgadoSr/Excel_VBA_Morningstar_to_OFX/blob/master/vba/Excel_VBA_Morningstar_to_OFX.vba) to Excel.  
   It includes the main macro called *makeOFX_file*.
