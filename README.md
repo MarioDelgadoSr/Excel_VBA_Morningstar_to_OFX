@@ -2,7 +2,7 @@
 
 # *Excel_VBA_Morningstar_to_OFX*
 
-* This [VBA](https://en.wikipedia.org/wiki/Visual_Basic_for_Applications) program will generate an OFX file from [Morningstar](https://www.morningstar.com/)'s Portfolio [export utiliity](http://www.morningstar.com/Help/Portfolio.html#Export) into an [OFX formatted file](http://moneymvps.org/faq/article/8.aspx).  
+* This [VBA](https://en.wikipedia.org/wiki/Visual_Basic_for_Applications) program will generate an OFX file from [Morningstar](https://www.morningstar.com/)'s Portfolio [Export feature](http://www.morningstar.com/Help/Portfolio.html#Export) into an [OFX formatted file](http://moneymvps.org/faq/article/8.aspx).  
 * The OFX file can then be imported into [Microsoft Money Plus Sunset](https://www.microsoft.com/en-us/download/details.aspx?id=20738) to update the portfolio's stock and mutual fund prices.
 
 With this VBA program installed in [Microsoft Excel](https://en.wikipedia.org/wiki/Microsoft_Excel), you have a reliable, [free](https://investing-school.com/review/morningstar-review-free-vs-premium-membership/) source of stock and mutual fund data to keep your Microsoft Money portfolio upto date.
@@ -42,7 +42,7 @@ The *Excel_VBA_Morningstar_to_OFX.vba* program is an alternative to the Python s
 	* [Video: Creating a Morningstar Portfolio](http://video.morningstar.com/us/misc/portfoliomanager/portfolio_noexisting.html)
 	* ![Screen Shot of required column in custom portfolio view](https://github.com/MarioDelgadoSr/Excel_VBA_Morningstar_to_OFX/blob/master/img/portfolio.png)
 
-* Use the Morningstar 'Export' utility (see screen shot above) to export the custom portfolio view to Excel.
+* Use the Morningstar [Export feature](http://www.morningstar.com/Help/Portfolio.html#Export) (see screen shot above) to export the custom portfolio view to Excel.
 
 * Run the *makeOFX_file* macro in Excel.  It will dynamically read the Excel-based portfolio data created by Moningstar and write out the specified file.
 
