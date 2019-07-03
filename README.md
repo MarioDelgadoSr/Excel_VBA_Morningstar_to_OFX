@@ -46,7 +46,7 @@ The *Excel_VBA_Morningstar_to_OFX.vba* program is an alternative to the Python s
 
 * Run the *makeOFX_file* macro in Excel.  It will dynamically read the Excel-based portfolio data created by Moningstar and write out the specified file.
 
-* Installation of Microsoft Money should assoicate .ofx files with the Microsoft Money Import Handler [mnyimprt.ext](http://moneymvps.org/faq/article/407.aspx).  
+* Installation of Microsoft Money should assoicate .ofx files with the Microsoft Money Import Handler [mnyimprt.exe](http://moneymvps.org/faq/article/407.aspx).  
   Double clicking your file will in the file explorer will start the import handler and prompt you to start Money to continue with the import.
   
 	* To automate the import, you can create a [desktop shortcut](https://answers.microsoft.com/en-us/windows/forum/windows_10-start/quick-tip-create-desktop-shortcuts-in-windows-10/d867565e-34c2-42ad-88da-ccf76a4a9820) for the quotes.ofx file.
