@@ -29,8 +29,7 @@ The *Excel_VBA_Morningstar_to_OFX.vba* program is an alternative to the Python s
    Morningstar Portfolio data as the security price source.
    
 
-* Add [Excel_VBA_Morningstar_to_OFX.vba](https://github.com/MarioDelgadoSr/Excel_VBA_Morningstar_to_OFX/blob/master/vba/Excel_VBA_Morningstar_to_OFX.vba) to Excel.  
-  It includes the main macro called *makeOFX_file*.
+* Add [Excel_VBA_Morningstar_to_OFX.vba](https://github.com/MarioDelgadoSr/Excel_VBA_Morningstar_to_OFX/blob/master/vba/Excel_VBA_Morningstar_to_OFX.vba) to Excel.  The .vba file includes the main macro called *makeOFX_file*.
 
 	* **Related**:
 	
