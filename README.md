@@ -36,7 +36,7 @@ The [*Excel_VBA_Morningstar_to_OFX.vba*](https://github.com/MarioDelgadoSr/Excel
 		
 * **Edit the program** (line 53) to specify the location of the OFX file that will be generated.  By default, the program will write out to "C:\temp\quotes.ofx".
 
-* Create a portfolio in Morningstar with 'Ticker', '$ Current Price' and 'Morningstar Rating For Funds' columns.  
+* Create a portfolio in Morningstar with '**Ticker**', '**$ Current Price**' and '**Morningstar Rating For Funds**' columns.  
 
 	* [Video: Creating a Morningstar Portfolio](http://video.morningstar.com/us/misc/portfoliomanager/portfolio_noexisting.html)
 	* ![Screen Shot of required column in custom portfolio view](https://github.com/MarioDelgadoSr/Excel_VBA_Morningstar_to_OFX/blob/master/img/portfolio.png)
