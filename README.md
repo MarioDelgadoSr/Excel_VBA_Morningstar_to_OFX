@@ -38,9 +38,9 @@ The [*Excel_VBA_Morningstar_to_OFX.vba*](https://github.com/MarioDelgadoSr/Excel
 
 * Create a portfolio in Morningstar with the following columns:
 
-	* '**Ticker**'; 
-	* '**$ Current Price**';
-	* '**Morningstar Rating For Funds**'   
+	* **Ticker** 
+	* **$ Current Price**
+	* **Morningstar Rating For Funds**
 
 	**Background Video**: [Creating a Morningstar Portfolio](http://video.morningstar.com/us/misc/portfoliomanager/portfolio_noexisting.html)
 	
