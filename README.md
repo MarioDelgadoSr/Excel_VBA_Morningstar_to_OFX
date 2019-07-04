@@ -52,7 +52,7 @@ The [*Excel_VBA_Morningstar_to_OFX.vba*](https://github.com/MarioDelgadoSr/Excel
 
 * When Microsoft Money was installed, it created a [file association](https://blogs.technet.microsoft.com/windowsinternals/2017/10/25/windows-10-how-to-configure-file-associations-for-it-pros/) for .ofx files with the Microsoft Money Import Handler [mnyimprt.exe](http://moneymvps.org/faq/article/407.aspx).  
   
-  Double clicking the *quotes.ofx* file  will in the file explorer will start the import handler and prompt you to start Money to continue with the import.
+  Double clicking the *quotes.ofx* file in the [file explorer](https://en.wikipedia.org/wiki/File_Explorer) will start the import handler and prompt you to start Money to continue with the import.
   
 	* To automate the import, you can create a [desktop shortcut](https://answers.microsoft.com/en-us/windows/forum/windows_10-start/quick-tip-create-desktop-shortcuts-in-windows-10/d867565e-34c2-42ad-88da-ccf76a4a9820) for the quotes.ofx file.
   
