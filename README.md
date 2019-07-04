@@ -9,7 +9,7 @@ With this VBA program installed in [Microsoft Excel](https://en.wikipedia.org/wi
 
 ## Microsoft Money Stock Price Importing Background:
 
-The articles listed here are for background and **not** detailing software install prerequisites.  
+The articles listed here are for background and are **not** detailing software install prerequisites.  
 
 The *Excel_VBA_Morningstar_to_OFX.vba* program is an alternative to the Python script detailed in the first article.  
 
