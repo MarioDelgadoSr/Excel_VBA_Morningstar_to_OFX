@@ -48,9 +48,9 @@ The [*Excel_VBA_Morningstar_to_OFX.vba*](https://github.com/MarioDelgadoSr/Excel
 
 * Use the Morningstar [Export feature](http://www.morningstar.com/Help/Portfolio.html#Export) (see screen shot above) to export the custom portfolio view to Excel.
 
-* Run the *makeOFX_file* macro in Excel.  It will dynamically read the Excel-based portfolio data created by Moningstar and write out the specified file.
+* [Run](https://www.ablebits.com/office-addins-blog/2013/12/06/add-run-vba-macro-excel/) the *makeOFX_file* macro in Excel.  It will dynamically read the Excel-based portfolio data exported by Moningstar and write out the file specified on line 53 of the VBA program.
 
-* Installation of Microsoft Money should assoicate .ofx files with the Microsoft Money Import Handler [mnyimprt.exe](http://moneymvps.org/faq/article/407.aspx).  
+* When Microsoft Money was installed, it created a [file association](https://blogs.technet.microsoft.com/windowsinternals/2017/10/25/windows-10-how-to-configure-file-associations-for-it-pros/) for .ofx files with the Microsoft Money Import Handler [mnyimprt.exe](http://moneymvps.org/faq/article/407.aspx).  
   Double clicking the *quotes.ofx* file  will in the file explorer will start the import handler and prompt you to start Money to continue with the import.
   
 	* To automate the import, you can create a [desktop shortcut](https://answers.microsoft.com/en-us/windows/forum/windows_10-start/quick-tip-create-desktop-shortcuts-in-windows-10/d867565e-34c2-42ad-88da-ccf76a4a9820) for the quotes.ofx file.
