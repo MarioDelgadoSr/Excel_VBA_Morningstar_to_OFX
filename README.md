@@ -11,7 +11,7 @@ With this VBA program installed in [Microsoft Excel](https://en.wikipedia.org/wi
 
 The articles listed here are for background and are **not** detailing software install prerequisites.  
 
-The *Excel_VBA_Morningstar_to_OFX.vba* program is an alternative to the Python script detailed in the first article.  
+The [*Excel_VBA_Morningstar_to_OFX.vba*](https://github.com/MarioDelgadoSr/Excel_VBA_Morningstar_to_OFX/blob/master/vba/Excel_VBA_Morningstar_to_OFX.vba) program is an alternative to the Python script detailed in the first article.  
 
 * [Download Price Quotes to Microsoft Money After Microsoft Pulls the Plug](https://thefinancebuff.com/security-quote-script-for-microsoft-money.html)
 * [Obtain stock and fund quotes after July 2013](http://moneymvps.org/faq/article/651.aspx)
