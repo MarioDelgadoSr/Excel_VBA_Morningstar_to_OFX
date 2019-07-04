@@ -42,7 +42,8 @@ The [*Excel_VBA_Morningstar_to_OFX.vba*](https://github.com/MarioDelgadoSr/Excel
 	* '**$ Current Price**';
 	* '**Morningstar Rating For Funds**' columns.  
 
-	**Background**: [Video: Creating a Morningstar Portfolio](http://video.morningstar.com/us/misc/portfoliomanager/portfolio_noexisting.html)
+	**Background Video**: [Creating a Morningstar Portfolio](http://video.morningstar.com/us/misc/portfoliomanager/portfolio_noexisting.html)
+	
 	 ![Screen Shot of required column in custom portfolio view](https://github.com/MarioDelgadoSr/Excel_VBA_Morningstar_to_OFX/blob/master/img/portfolio.png)
 
 * Use the Morningstar [Export feature](http://www.morningstar.com/Help/Portfolio.html#Export) (see screen shot above) to export the custom portfolio view to Excel.
