@@ -3,6 +3,7 @@
 # *Excel_VBA_Morningstar_to_OFX*
 
 * This [VBA](https://en.wikipedia.org/wiki/Visual_Basic_for_Applications) program will generate an OFX file from [Morningstar](https://www.morningstar.com/)'s Portfolio [Export feature](http://www.morningstar.com/Help/Portfolio.html#Export) into an [OFX formatted file](http://moneymvps.org/faq/article/8.aspx).  
+	* For a Google Sheet Apps alternative, see [Google_Sheet_Script_to_OFX](https://github.com/MarioDelgadoSr/Google_Sheet_Script_to_OFX).
 	* For a JavaScript alternative, see [Microsoft Money Sunset Edition Open Financial Exchange (OFX) file for Updating Portfolio Security Prices](https://observablehq.com/@mariodelgadosr/microsoft-money-sunset-edition-open-file-exchange-ofx-file).
 * The OFX file can then be imported into [Microsoft Money Plus Sunset](https://www.microsoft.com/en-us/download/details.aspx?id=20738) to update the portfolio's stock and mutual fund prices.
 
